@@ -12,7 +12,7 @@ console.log(sum)
 
 // Ejemplo 3: forEach para imprimir los países en letras mayúsculas
 const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
-console.log("Ejemplo 5: Imprimiendo la lista de países en mayúsculas")
+console.log("Ejemplo 3: Imprimiendo la lista de países en mayúsculas")
 countries.forEach((element) => console.log(element.toUpperCase()))
 
 // Ejemplo 4: Uso de map para recorrer los elementos de una lista y crear una nueva lista
@@ -28,17 +28,17 @@ console.log(numbersSquare)
 
 // Ejemplo 5: Uso de Map para convertir todos los nombres de una lista a minúsculas
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-const namesToUpperCase = names.map((name) => name.toUpperCase())
+const namesToLowerCase = names.map((name) => name.toLowerCase())
 
 console.log("Ejemplo 5: Uso de Map para convertir todos los nombres de una lista a minúsculas")
-console.log(namesToUpperCase)
+console.log(namesToLowerCase)
 
 // Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas
 const countries6 = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
 const countriesFirstThreeLetters = countries6.map((country) =>
   country.toUpperCase().slice(0, 3) // el método slice obtiene solo la longitud marcada del string
 )
-console.log("Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas")
+console.log("Ejemplo 6: Uso de map para convertir todos los nombres acortados de una lista a mayúsculas")
 console.log(countriesFirstThreeLetters)
 
 // Ejemplo 7: Uso de filter para filtrar una lista de elementos
@@ -46,17 +46,17 @@ const countries7 = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
 const countriesContainingLand = countries7.filter((country) => // esta es una función
   country.includes('land') // indicación para solo filtrar elementos que incluyan "land"
 )
-console.log("Ejemplo 7: Uso de filter para filtrar una lista de elementos")
+console.log("Ejemplo 7: Uso de filter para filtrar una lista de elementos que contienen 'land'")
 console.log(countriesContainingLand)
 const countriesEndsByia = countries.filter((country) => country.endsWith('ia'))
-console.log("Ejemplo 7: Paises que terminan en i")
+console.log("Ejemplo 7: Paises que terminan en ia")
 console.log(countriesEndsByia)
 
 // Ejemplo 8: Filtrar una lista por condicional
 const scores = [
   { name: 'A', score: 95 },
   { name: 'L', score: 98 },
-  { name: 'M', score: 80 },
+  { name: 'N', score: 80 },
   { name: 'E', score: 50 },
   { name: 'M', score: 85 },
   { name: 'J', score: 100 },
@@ -87,11 +87,11 @@ const scores12 = [
   { name: 'A', score: 95 },
   { name: 'M', score: 80 },
   { name: 'E', score: 50 },
-  { name: 'M', score: 85 },
+  { name: 'N', score: 85 },
   { name: 'J', score: 100 },
 ]
 
-const score_less_than_80 = scores12.find((user) => user.score > 80)
+const score_less_than_80 = scores12.find((user) => user.score < 80)
 console.log("Ejemplo 12. Name score found:" + score_less_than_80.name)
 
 // Ejemplo 13: Uso de findIndex, este método regresa la posición del primer elemento que cumpla con la validación que indiques.
