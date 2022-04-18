@@ -1,17 +1,3 @@
-/*
-Repo
-+name
-+author
-+language
-+numberOfCommits
-+stars
-+forks
-+issues_open
-+issues_close
-+getTotalIssues()
-+getGeneralInfo()
-*/
-
 const repo = {
     name: "LaunchX",
     author: "carlogilmar",
