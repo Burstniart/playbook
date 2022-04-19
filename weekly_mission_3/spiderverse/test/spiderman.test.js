@@ -12,4 +12,14 @@ describe('Unit Test for Spiderman CLass', () => {
         expect(andrewGarfield.studio).toBe("Sony");
 
     });
+    test('2) Use tge method getInfo()', () => {
+        // I write here code for it to work
+        const tomHolland = new Spiderman('Spiderman Marvel', 25, 'Tom Holland', 6, 'Marvel')
+// Queremos usar un método que nos regrese la siguiente información: nombre y estudio al que pertenece el spiderman instanciado.
+// Ejemplo:
+        // I expect this to work
+        expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
+// tomHolland.getInfo() // esto necesita regresar: "Hey, I'm Tom Holland from Marvel studio"
+
+    });
 })
