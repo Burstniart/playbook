@@ -6,7 +6,6 @@ class Spiderman {
         this.movies = movies
         this.studio = studio
     }
-// tomHolland.getInfo() // esto necesita regresar: "Hey, I'm Tom Holland from Marvel studio"
     getInfo = () => {
         return `Hey, I'm ${this.actor} from ${this.studio} studio`
     }
