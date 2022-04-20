@@ -18,6 +18,14 @@ describe('Unit Test for Twitter', () => {
         expect(user.getDateCreated).not.toBeUndefined();
         expect(user.getLastUpdated).not.toBeUndefined();
     });
+    test('3) Setters for User', () => {
+        const user = new User(2, 'Princess_Peach', 'Monika', "She's a queen, beach!");
+        user.setUsername = 'Toadette'
+        expect(user.username).toBe('Toadette');
+
+        user.setBio = 'New Bio'
+        expect(user.bio).toBe('New Bio')
+    });
 })
 
 
