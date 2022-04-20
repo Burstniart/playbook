@@ -7,5 +7,12 @@ class UserService {
         // returns an array of a given object's own enumerable property values
         return Object.values(User)
     }
+    static updateUsername(user, newUserName) {
+        user.username = newUserName
+    }
 }
 module.exports = UserService
+
+// Requerimiento 3: Agregar un nuevo método estático en `UserService` llamado
+//  `updateUserUsername`, que reciba un objeto de la clase `User` y un nuevo string, que 
+//  actualizará el valor de `username`. 
