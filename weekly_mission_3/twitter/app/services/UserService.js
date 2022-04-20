@@ -10,9 +10,9 @@ class UserService {
     static updateUsername(user, newUserName) {
         user.username = newUserName
     }
+    static getAllUsernames(userList) {
+        return userList.map((user) => user.username)
+
+    }
 }
 module.exports = UserService
-
-// Requerimiento 3: Agregar un nuevo método estático en `UserService` llamado
-//  `updateUserUsername`, que reciba un objeto de la clase `User` y un nuevo string, que 
-//  actualizará el valor de `username`. 
