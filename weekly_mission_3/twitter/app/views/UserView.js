@@ -1,5 +1,15 @@
+const UserService = require('./../services/UserService')
 
-
+class UserView {
+    static createUser(payload) {
+        const result = {}
+        if(payload == null) {
+            result.error = 'payload no existe'
+        }
+        return result
+        // return UserService.create(id, username, name, 'No bio')
+    }
+}
 // Crea una clase llamada `UserView` que servirá para interactuar con el modelo `User` a través de `userService`. 
 // Crea un método en esta clase llamado `create User` que sirva para crear un nuevo objeto user a partir de un 
 // `payload`, quiero decir un objeto que contenga información para crearlo.
