@@ -2,9 +2,8 @@ const UserService = require('./../services/UserService')
 
 class UserView {
     static createUser(payload) {
-        const result = {}
-        if(payload == null) {
-            result.error = 'payload no existe'
+        if(payload === null) {
+            return {error : 'payload no existe'}
         }
         else if(typeof payload.username != String & typeof payload.name != String & typeof payload.id != Number) {
             result.error ='must have valid values'
