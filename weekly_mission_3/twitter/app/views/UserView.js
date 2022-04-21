@@ -6,8 +6,10 @@ class UserView {
         if(payload == null) {
             result.error = 'payload no existe'
         }
+        else if(typeof payload.username != String & typeof payload.name != String & typeof payload.id != Number) {
+            result.error ='must have valid values'
+        }
         return result
-        // return UserService.create(id, username, name, 'No bio')
     }
 }
 // Crea una clase llamada `UserView` que servirá para interactuar con el modelo `User` a través de `userService`. 
