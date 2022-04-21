@@ -12,7 +12,6 @@ class UserService {
     }
     static getAllUsernames(userList) {
         return userList.map((user) => user.username)
-
     }
 }
 module.exports = UserService
