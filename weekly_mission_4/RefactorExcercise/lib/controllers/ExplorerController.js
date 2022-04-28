@@ -17,5 +17,13 @@ class ExplorerController {
         const missioners = ExplorerService.getAmountOfExplorersByMission(explorers, mission);
         return missioners;
     }
+    static getTrickByScore(number) {
+        return FizzbuzzService.applyValidationInNumber(number);
+    }
+    static getExplorersByStack(stack){
+        const explorers = Reader.readJsonFile("explorers.json");
+        const stackers = ExplorerService.getExplorersByStack(explorers, stack);
+        return stackers;
+    }
 }
 module.exports = ExplorerController;

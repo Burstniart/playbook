@@ -20,4 +20,12 @@ describe("Test suit for ExplorerService", () => {
 
         expect(nodersUsernames[0]).toBe("ajolonauta1");
     });
+    test("4) Explorers by stack", () => {
+        const explorers = Reader.readJsonFile("explorers.json");
+        const elixsers = ExplorerService.getExplorersByStack(explorers, "elixir");
+        const jsers = ExplorerService.getExplorersByStack(explorers, "javascript");
+
+        expect(jsers[0]).toBe("Woopa1");
+        expect(elixsers[0]).toBe("Woopa3");
+    });
 });
